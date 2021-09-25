@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_bnv_client_dps"
+        android:icon="@drawable/selector_dps"
+        android:title="@string/menu_bnv_client_dps"/>
+
+    <item
+        android:id="@+id/menu_bnv_client_gap1"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/menu_bnv_client_dps_valide"
+        android:icon="@drawable/selector_dps_valide"
+        android:title="@string/menu_bnv_client_dps_valide"/>
+
+</menu>

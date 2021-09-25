@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="kahrakib_blue_dark_extra">#03254c</color>
+    <color name="kahrakib_blue_regular">#187bcd</color>
+    <color name="kahrakib_blue_light">#2a9df4</color>
+    <color name="kahrakib_blue_light_extra">#d0efff</color>
+    <color name="kahrakib_black">#000000</color>
+    <color name="kahrakib_white">#ffffff</color>
+    <color name="kahrakib_transparent">#00FFFFFF</color>
+    <color name="kahrakib_gray">#d7dbe5</color>
+    <color name="kahrakib_gray_light">#f5f7f9</color>
+    <color name="kahrakib_red">#D32F2F</color>
+    <color name="kahrakib_red_light">#ff3943</color>
+    <color name="kahrakib_red_dark">#801b20</color>
+    <color name="kahrakib_green">#3eb959</color>
+    <color name="kahrakib_green_light">#abffc0</color>
+    <color name="kahrakib_green_dark">#247b37</color>
+    <color name="kahrakib_green_digital">#48C9B9</color>
+    <color name="kahrakib_orange">#FFA000</color>
+
+
+    <color name="primaryColor">#005bff</color>
+    <color name="primaryLightColor">#6c88ff</color>
+    <color name="primaryDarkColor">#0033cb</color>
+    <color name="primaryTextColor">#101010</color>
+    <color name="secondaryColor">#005bff</color>
+    <color name="secondaryLightColor">#6c88ff</color>
+    <color name="secondaryDarkColor">#0033cb</color>
+    <color name="secondaryTextColor">#101010</color>
+
+
+</resources>

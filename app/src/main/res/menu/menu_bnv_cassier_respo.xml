@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_bnv_cassier_respo_edc"
+        android:title="@string/menu_bnv_cassier_respo_edc"
+        android:icon="@drawable/selector_dps"/>
+
+    <item
+        android:id="@+id/menu_bnv_cassier_respo_valide"
+        android:title="@string/menu_bnv_cassier_respo_valide"
+        android:icon="@drawable/selector_dps_valide"/>
+
+    <item
+        android:id="@+id/menu_bnv_cassier_respo_en_attente"
+        android:title="@string/menu_bnv_cassier_respo_en_attente"
+        android:icon="@drawable/selector_pending"/>
+</menu>

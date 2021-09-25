@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/bg_circle.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/bg_cuted.xml" value="0.21875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/bg_form.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/bg_qty.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/bg_rounded.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/ic_espace_cassier_respo.xml" value="0.21875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/ic_menu_kahrakib.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/ripple_rounded_top.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/selector_dps.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/selector_dps_envoyer.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/selector_dps_valide.xml" value="0.21875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/selector_element.xml" value="0.21875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/selector_pending.xml" value="0.21875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/drawable/selector_search.xml" value="0.22083333333333333" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/component_avatar.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/component_error.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/component_loading_circle.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/component_qty.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/component_success.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/dialog_add_user.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/dialog_conferme_en_attente.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/dialog_conferme_envoi.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/dialog_conferme_rejeter.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/dialog_conferme_suppression.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/dialog_error.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_admin.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_ajouter_achats.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_ajouter_chantier.xml" value="0.22" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_ajouter_designation.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_ajouter_dps.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_ajouter_element.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_ajouter_user.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_auth.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_cassier.xml" value="0.22" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_cassier_respo.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_chantier.xml" value="0.16" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_client.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_comptable.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_condition.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_contact.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_dps.xml" value="0.22" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_dps_details.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_dps_envoyer.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_dps_recu.xml" value="0.22" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_edc.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_edc_details.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_editer.xml" value="0.2443579766536965" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_element.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_information.xml" value="0.2" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_modifier_chantier.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_modifier_element.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_modifier_user.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_parametre.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_pass.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_recherche.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_requete.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/fragment_users.xml" value="0.16" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_achat.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_achat_details.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_chantier.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_dps.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_dps_details.xml" value="0.25" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_dps_recu.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_edc.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_element.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_filter.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_recherche_resultat.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/layout/item_user.xml" value="0.33" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_ab.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_bnv_admin.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_bnv_cassier.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_bnv_cassier_respo.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_bnv_client.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_bnv_comptable.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_cassier_respo.xml" value="0.20260416666666667" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_chantier_filter.xml" value="0.12927631578947368" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_element_filter.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_item_achat.xml" value="0.2046875" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_item_chantier.xml" value="0.12927631578947368" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_item_user.xml" value="0.12927631578947368" />
+        <entry key="..\:/Project/Android/Kahrakib/app/src/main/res/menu/menu_user_filter.xml" value="0.12927631578947368" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

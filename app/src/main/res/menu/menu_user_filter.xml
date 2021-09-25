@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_user_filter_administrateur"
+        android:title="@string/menu_user_filter_administratuer" />
+
+    <item
+        android:id="@+id/menu_user_filter_cassier"
+        android:title="@string/menu_user_filter_cassier" />
+
+    <item
+        android:id="@+id/menu_user_filter_cassier_respo"
+        android:title="@string/menu_user_filter_cassier_respo" />
+
+    <item
+        android:id="@+id/menu_user_filter_comptable"
+        android:title="@string/menu_user_filter_comptable" />
+
+    <item
+        android:id="@+id/menu_user_filter_client"
+        android:title="@string/menu_user_filter_client" />
+
+    <item
+        android:id="@+id/menu_user_filter_tout"
+        android:title="@string/menu_user_filter_tout" />
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- starter screen -->
+    <style name="Theme.start" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/layer_list_start</item>
+        <item name="android:statusBarColor">@color/kahrakib_white</item>
+    </style>
+
+    <!-- rounded image -->
+    <style name="image_rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25%</item>
+    </style>
+
+    <!-- circle image -->
+    <style name="image_circle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ripple_global">
+        <item name="colorControlHighlight">@color/kahrakib_gray</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+
+
+    <!-- collapsed toolbar -->
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_user_modifier"
+        android:title="@string/menu_item_user_modifier"/>
+
+    <item
+        android:id="@+id/menu_item_user_supprimer"
+        android:title="@string/menu_item_user_supprimer"/>
+</menu>

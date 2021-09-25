@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kahrakib_white"
+    tools:context=".fragments.admin.AjouterChantierFragment">
+
+    <include
+        android:id="@+id/pb_fragment_ajouter_achats_component_loading"
+        layout="@layout/component_loading_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/rl_fragment_ajouter_achats_component_error"
+        layout="@layout/component_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/rl_fragment_ajouter_achats_component_succes"
+        layout="@layout/component_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_fragment_ajouter_achats_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cl_fragment_ajouter_achats_somme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!--  app bar start -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/apl_fragment_ajouter_achats"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/kahrakib_white"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/ctl_fragment_ajouter_achats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleTextAppearance="@style/CollapsedAppBar"
+                app:expandedTitleMarginStart="@dimen/margin_global"
+                app:expandedTitleTextAppearance="@style/ExpandedAppBar"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_global"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="parallax" />
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/mtb_fragment_ajouter_achats"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@drawable/ic_back"
+                    app:navigationIconTint="@color/primaryColor"
+                    app:title="@string/fragment_ajouter_achats_titre" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <!-- app bar end -->
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_fragment_ajouter_achats_sub_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="@dimen/padding_global"
+                    android:background="@drawable/bg_qty">
+
+                    <!-- designation start  -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_fragment_ajouter_achats_designation"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/fragment_ajouter_achats_designation"
+                        app:boxBackgroundColor="@color/kahrakib_transparent"
+                        app:boxStrokeColor="@color/primaryColor"
+                        app:endIconMode="dropdown_menu"
+                        app:helperTextTextColor="@color/kahrakib_red"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!-- designation end  -->
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_fragment_ajouter_achats_prix_unitaire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/fragment_ajouter_achats_prix_unitaire"
+                        app:boxBackgroundColor="@color/kahrakib_transparent"
+                        app:endIconMode="clear_text"
+                        app:layout_constraintTop_toBottomOf="@id/til_fragment_ajouter_achats_designation">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_fragment_ajouter_achats_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QTE:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintStart_toStartOf="@id/til_fragment_ajouter_achats_prix_unitaire"
+                        app:layout_constraintTop_toTopOf="@id/cl_fragment_ajouter_achats_component_qty"
+                        app:layout_constraintBottom_toBottomOf="@id/cl_fragment_ajouter_achats_component_qty"
+                        app:layout_constraintEnd_toStartOf="@id/cl_fragment_ajouter_achats_component_qty"/>
+
+                    <include
+                        android:id="@+id/cl_fragment_ajouter_achats_component_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        layout="@layout/component_qty"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintVertical_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/til_fragment_ajouter_achats_prix_unitaire"
+                        app:layout_constraintTop_toBottomOf="@id/til_fragment_ajouter_achats_prix_unitaire"
+                        app:layout_constraintEnd_toEndOf="@id/til_fragment_ajouter_achats_prix_unitaire"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mbtn_fragment_ajouter_achats_ajouter"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="20dp"
+                        android:elevation="5dp"
+                        android:text="@string/fragment_ajouter_achats_ajouter"
+                        android:textColor="@color/kahrakib_white"
+                        app:cornerRadius="@dimen/button_corners"
+                        app:rippleColor="@color/kahrakib_gray_light"
+                        app:layout_constraintTop_toBottomOf="@id/cl_fragment_ajouter_achats_component_qty"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_ajouter_achats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="@dimen/padding_global"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_ajouter_achats_titre_liste"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/primaryColor" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_fragment_ajouter_achats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_fragment_ajouter_achats_vide"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_ajouter_achat_box"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_box"
+                        app:tint="@color/primaryColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_fragment_ajouter_achat_box"
+                        android:layout_alignStart="@id/iv_fragment_ajouter_achat_box"
+                        android:layout_alignEnd="@id/iv_fragment_ajouter_achat_box"
+                        android:text="@string/fragment_ajouter_achats_liste_vide"
+                        android:textAlignment="center"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_fragment_ajouter_achats_somme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kahrakib_white"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="@dimen/padding_global"
+            android:elevation="50dp"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tv_fragment_ajouter_achats_prix_titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_ajouter_achats_prix_total"
+                android:textStyle="bold"
+                android:textColor="@color/kahrakib_black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_fragment_ajouter_achats_prix_totale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 da"
+                android:textSize="18sp"
+                android:textColor="@color/kahrakib_red"
+                app:layout_constraintTop_toBottomOf="@id/tv_fragment_ajouter_achats_prix_titre"
+                app:layout_constraintStart_toStartOf="@id/tv_fragment_ajouter_achats_prix_titre" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_fragment_ajouter_achats_envoyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check"
+                app:tint="@color/kahrakib_white"
+                app:elevation="2.5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

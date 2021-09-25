@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_chantier_filter_dtlc"
+        android:title="@string/menu_chantier_filter_dtlc" />
+
+    <item
+        android:id="@+id/menu_chantier_filter_dtpi"
+        android:title="@string/menu_chantier_filter_dtpi" />
+
+    <item
+        android:id="@+id/menu_chantier_filter_tout"
+        android:title="@string/menu_chantier_filter_tout" />
+
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_global">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_component_succes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/raw_success"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_lav_component_succes_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/component_success_titre"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/kahrakib_green"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintTop_toBottomOf="@id/lav_component_succes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_lav_component_succes_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/component_success_message"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintTop_toBottomOf="@id/tv_lav_component_succes_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtn_component_succes_continue"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:elevation="5dp"
+        android:backgroundTint="@color/kahrakib_green"
+        android:text="@string/component_success_continue"
+        android:textColor="@color/kahrakib_white"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/button_corners"
+        app:rippleColor="@color/kahrakib_gray_light"
+        app:layout_constraintVertical_bias=".7"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lav_component_succes_message"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

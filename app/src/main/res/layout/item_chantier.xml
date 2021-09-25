@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/padding_global"
+    android:layout_marginVertical="3dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/v_item_chantier"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:background="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_item_chantier_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginTop="7dp"
+            android:text="In Amenas"
+            android:textAllCaps="true"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/v_item_chantier"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_item_chantier_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:src="@drawable/ic_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primaryColor"
+            android:background="?selectableItemBackgroundBorderless"/>
+
+        <LinearLayout
+            android:id="@+id/gl_item_user_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginVertical="7dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toEndOf="@id/v_item_chantier"
+            app:layout_constraintTop_toBottomOf="@id/tv_item_chantier_nom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_chantier_imputation"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_item_Chantier_imputation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DTLC_IN_AMENAS"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_chantier_adresse"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_item_Chantier_adresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hassi Messouad"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

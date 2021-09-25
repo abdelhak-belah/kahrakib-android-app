@@ -1,0 +1,323 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kahrakib_white"
+    tools:context=".fragments.common.ProfileFragment">
+
+
+    <include
+        android:id="@+id/pb_fragment_profile_component_loading"
+        layout="@layout/component_loading_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/rl_fragment_profile_component_error"
+        layout="@layout/component_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_fragment_profile_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/abl_fragment_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kahrakib_white"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/ctl_fragment_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/kahrakib_white"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_profile_user_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="40dp"
+                    app:layout_collapseMode="parallax">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/siv_fragment_profile_avatar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:elevation="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_person"
+                        android:tint="@color/primaryColor"
+                        android:background="@color/kahrakib_white"
+                        app:shapeAppearanceOverlay="@style/image_circle" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_profile_full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/fragment_profile_nom_complete"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_profile_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/fragment_profile_email"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/mtb_fragment_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@drawable/ic_back"
+                    app:navigationIconTint="@color/primaryColor"/>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_fragment_profile_sub_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/padding_global"
+            android:background="@drawable/bg_rounded_top"
+            android:elevation="5dp"
+            android:fillViewport="true"
+            android:padding="5dp"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_profile_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rounded_top"
+                    android:padding="@dimen/padding_global"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_person"
+                        app:tint="@color/primaryColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fragment_profile_personal_information"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_next"
+                        app:tint="@color/primaryColor" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_profile_change_mot_de_passe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rounded_top"
+                    android:padding="@dimen/padding_global"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_profile_information">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_lock"
+                        app:tint="@color/primaryColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fragment_profile_change_mot_de_passe"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_next"
+                        app:tint="@color/primaryColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_profile_parametre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rounded_top"
+                    android:padding="@dimen/padding_global"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_profile_change_mot_de_passe">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_settings"
+                        app:tint="@color/primaryColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fragment_profile_parametre"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_next"
+                        app:tint="@color/primaryColor" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_profile_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rounded_top"
+                    android:padding="@dimen/padding_global"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_profile_parametre">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_email"
+                        app:tint="@color/primaryColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fragment_profile_contact"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_next"
+                        app:tint="@color/primaryColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_profile_condition_de_utilisation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rounded_top"
+                    android:padding="@dimen/padding_global"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_profile_contact">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_alert"
+                        app:tint="@color/primaryColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fragment_profile_condition_de_utilisation"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_next"
+                        app:tint="@color/primaryColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_profile_deconnecter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rounded_top"
+                    android:padding="@dimen/padding_global"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ll_fragment_profile_condition_de_utilisation">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_logout"
+                        app:tint="@color/kahrakib_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/fragment_profile_deconnecter"
+                        android:textColor="@color/kahrakib_red"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

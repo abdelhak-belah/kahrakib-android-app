@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_global"
+        android:clipToPadding="false">
+
+        <ImageView
+            android:id="@+id/iv_dialog_conferme_suppression_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            app:tint="@color/primaryColor" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lav_dialog_conferme_suppression"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/iv_dialog_conferme_suppression_close"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/raw_trash"
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/tv_dialog_conferme_suppression_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lav_dialog_conferme_suppression"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/dialog_conferme_supprission_message"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dialog_conferme_suppression_message"
+            android:layout_marginTop="80dp"
+            android:clipToPadding="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbtn_dialog_conferme_suppression_annuler"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/kahrakib_white"
+                android:elevation="2.5dp"
+                android:text="@string/dialog_conferme_supprission_annuler"
+                android:textColor="@color/kahrakib_black"
+                app:cornerRadius="@dimen/button_corners"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbtn_dialog_conferme_suppression_conferme"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/primaryColor"
+                android:elevation="2.5dp"
+                android:text="@string/dialog_conferme_supprission_conferme"
+                android:textColor="@color/kahrakib_white"
+                app:cornerRadius="@dimen/button_corners"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_bnv_admin_users"
+        android:icon="@drawable/selector_users"
+        android:title="@string/menu_bnv_admin_utilisateur"/>
+
+    <item
+        android:id="@+id/menu_bnv_admin_chantier"
+        android:icon="@drawable/selector_chantier"
+        android:title="@string/menu_bnv_admin_chantier"/>
+
+    <item
+        android:id="@+id/menu_bnv_admin_elements"
+        android:icon="@drawable/selector_element"
+        android:title="@string/menu_bnv_admin_elements"/>
+
+    <item
+        android:id="@+id/menu_bnv_admin_search"
+        android:icon="@drawable/selector_search"
+        android:title="@string/menu_bnv_admin_search"/>
+
+</menu>

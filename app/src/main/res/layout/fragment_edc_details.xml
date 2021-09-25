@@ -1,0 +1,303 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kahrakib_white"
+    tools:context=".fragments.common.EdcDetailsFragment">
+
+
+    <include
+        android:id="@+id/pb_fragment_edc_details_component_loading"
+        layout="@layout/component_loading_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/rl_fragment_edc_details_component_error"
+        layout="@layout/component_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/rl_fragment_edc_details_component_succes"
+        layout="@layout/component_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_fragment_edc_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/abl_fragment_edc_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kahrakib_white"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/ctl_fragment_edc_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/kahrakib_white"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment_edc_details_editeur_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingVertical="40dp"
+                    app:layout_collapseMode="parallax">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_fragment_edc_details_en_attente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_fragment_edc_details_en_attente"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_pending"
+                            android:background="@drawable/bg_circle"
+                            android:backgroundTint="@color/kahrakib_orange"
+                            app:tint="@color/kahrakib_white"
+                            android:elevation="2.5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fragment_edc_details_en_attente"
+                            android:textColor="@color/kahrakib_orange"
+                            app:layout_constraintEnd_toEndOf="@id/iv_fragment_edc_details_en_attente"
+                            app:layout_constraintStart_toStartOf="@id/iv_fragment_edc_details_en_attente"
+                            app:layout_constraintTop_toBottomOf="@id/iv_fragment_edc_details_en_attente" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_fragment_edc_details_supprimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_fragment_edc_details_supprimer"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_trash"
+                            android:background="@drawable/bg_circle"
+                            android:backgroundTint="@color/kahrakib_red_light"
+                            app:tint="@color/kahrakib_white"
+                            android:elevation="2.5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fragment_edc_details_supprimer"
+                            android:textColor="@color/kahrakib_red_light"
+                            app:layout_constraintEnd_toEndOf="@id/iv_fragment_edc_details_supprimer"
+                            app:layout_constraintStart_toStartOf="@id/iv_fragment_edc_details_supprimer"
+                            app:layout_constraintTop_toBottomOf="@id/iv_fragment_edc_details_supprimer" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_fragment_edc_details_valide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_fragment_edc_details_valide"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_check"
+                            android:background="@drawable/bg_circle"
+                            android:backgroundTint="@color/kahrakib_green"
+                            app:tint="@color/kahrakib_white"
+                            android:elevation="2.5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fragment_edc_details_valide"
+                            android:textColor="@color/kahrakib_green"
+                            app:layout_constraintEnd_toEndOf="@id/iv_fragment_edc_details_valide"
+                            app:layout_constraintStart_toStartOf="@id/iv_fragment_edc_details_valide"
+                            app:layout_constraintTop_toBottomOf="@id/iv_fragment_edc_details_valide" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/mtb_fragment_edc_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@drawable/ic_back"
+                    app:navigationIconTint="@color/primaryColor" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_fragment_edc_details_sub_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_top"
+            android:elevation="5dp"
+            android:fillViewport="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_fragment_edc_details_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/fragment_edc_details_titre"
+                    android:textColor="@color/kahrakib_black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <GridLayout
+                    android:id="@+id/gl_fragment_edc_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="40dp"
+                    android:columnCount="2"
+                    android:rowCount="6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fragment_edc_details_title"
+                    app:layout_constraintVertical_bias="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_edc_details_etat" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_edc_details_etat"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_edc_details_numero_etat"/>
+
+                    <TextView
+                        android:id="@+id/tv_fragment_edc_details_numero_etat"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/kahrakib_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_edc_details_imputation" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_edc_details_imputation"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/kahrakib_black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_edc_details_montent_global" />
+
+                    <TextView
+                        android:id="@+id/tv_fragment_edc_details_montent_global"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/kahrakib_green" />
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/tv_fragment_edc_details_articles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/fragment_edc_details_article"
+                    android:textColor="@color/kahrakib_black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gl_fragment_edc_details" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_fragment_edc_details"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_fragment_edc_details_articles" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

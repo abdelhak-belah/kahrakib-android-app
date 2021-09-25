@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_bnv_cassier_dps"
+        android:title="@string/menu_bnv_cassier_dps"
+        android:icon="@drawable/selector_dps"/>
+
+    <item
+        android:id="@+id/menu_bnv_cassier_edc"
+        android:title="@string/menu_bnv_cassier_edc"
+        android:icon="@drawable/selector_dps_valide"/>
+</menu>

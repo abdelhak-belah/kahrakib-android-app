@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_ab_notification"
+        android:title="@string/menu_ab_profile"
+        android:icon="@drawable/selector_bell"
+        app:iconTint="@color/primaryColor"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_ab_profile"
+        android:title="@string/menu_ab_profile"
+        app:actionLayout="@layout/component_avatar"
+        app:showAsAction="always" />
+
+</menu>

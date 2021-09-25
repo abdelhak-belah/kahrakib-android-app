@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kahrakib_white"
+    tools:context=".fragments.admin.AjouterUserFragment">
+
+    <include
+        android:id="@+id/pb_fragment_ajouter_user_component_loading"
+        layout="@layout/component_loading_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/rl_fragment_ajouter_user_component_error"
+        layout="@layout/component_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/rl_fragment_ajouter_user_component_succes"
+        layout="@layout/component_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_fragment_ajouter_user_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!--  app bar start -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/apl_fragment_ajouter_user"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/kahrakib_white"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/ctl_fragment_ajouter_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleTextAppearance="@style/CollapsedAppBar"
+                app:expandedTitleMarginStart="@dimen/margin_global"
+                app:expandedTitleTextAppearance="@style/ExpandedAppBar"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_global"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="parallax" />
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/mtb_fragment_ajouter_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@drawable/ic_close"
+                    app:navigationIconTint="@color/primaryColor"
+                    app:title="@string/fragment_ajouter_user_titre" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <!-- app bar end -->
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_fragment_ajouetr_user_sub_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/padding_global"
+            android:fillViewport="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <!-- user information start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- user profil start  -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fragment_ajouter_user_profil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/fragment_ajouter_user_profil"
+                    app:boxBackgroundColor="@color/kahrakib_transparent"
+                    app:boxStrokeColor="@color/primaryColor"
+                    app:endIconMode="dropdown_menu"
+                    app:helperText="@string/fragment_ajouter_user_obligatoire"
+                    app:helperTextTextColor="@color/kahrakib_red">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- user profil end  -->
+
+                <!-- user profil start  -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fragment_ajouter_user_chantier"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/fragment_ajouter_user_chantier"
+                    app:boxBackgroundColor="@color/kahrakib_transparent"
+                    app:boxStrokeColor="@color/primaryColor"
+                    app:endIconMode="dropdown_menu"
+                    app:helperText="@string/fragment_ajouter_user_obligatoire"
+                    app:helperTextTextColor="@color/kahrakib_red">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- user profil end  -->
+
+                <!-- user profil start  -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fragment_ajouter_user_direction"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/fragment_ajouter_user_direction"
+                    app:boxBackgroundColor="@color/kahrakib_transparent"
+                    app:boxStrokeColor="@color/primaryColor"
+                    app:endIconMode="dropdown_menu"
+                    app:helperText="@string/fragment_ajouter_user_obligatoire"
+                    app:helperTextTextColor="@color/kahrakib_red">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- user profil end  -->
+
+                <!-- user nom start  -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fragment_ajouter_user_nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/fragment_ajouter_user_nom"
+                    app:boxBackgroundColor="@color/kahrakib_transparent"
+                    app:endIconMode="clear_text"
+                    app:helperText="@string/fragment_ajouter_user_obligatoire"
+                    app:helperTextTextColor="@color/kahrakib_red">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- user nom end  -->
+
+                <!-- user prenom start  -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fragment_ajouter_user_prenom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/fragment_ajouter_user_prenom"
+                    app:boxBackgroundColor="@color/kahrakib_transparent"
+                    app:boxStrokeColor="@color/primaryColor"
+                    app:endIconMode="clear_text"
+                    app:helperText="@string/fragment_ajouter_user_obligatoire"
+                    app:helperTextTextColor="@color/kahrakib_red">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- user prenom end  -->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_ajouter_user_naissance"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/kahrakib_black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- user naissance start  -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_fragment_ajouter_user_naissance_jour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/fragment_ajouter_user_naissance_jour"
+                        app:boxBackgroundColor="@color/kahrakib_transparent"
+                        app:boxStrokeColor="@color/primaryColor"
+                        app:endIconMode="clear_text"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="date"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!-- user naissance end  -->
+
+                    <!-- user naissance start  -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_fragment_ajouter_user_naissance_mois"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/fragment_ajouter_user_naissance_mois"
+                        app:boxBackgroundColor="@color/kahrakib_transparent"
+                        app:boxStrokeColor="@color/primaryColor"
+                        app:endIconMode="clear_text"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="date"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!-- user naissance end  -->
+
+                    <!-- user naissance start  -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_fragment_ajouter_user_naissance_annee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/fragment_ajouter_user_naissance_annee"
+                        app:boxBackgroundColor="@color/kahrakib_transparent"
+                        app:boxStrokeColor="@color/primaryColor"
+                        app:endIconMode="clear_text"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="date"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="0dp"
+                            android:textSize="18sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!-- user naissance end  -->
+
+                </LinearLayout>
+
+                <!-- user email start  -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fragment_ajouter_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/fragment_ajouter_user_email"
+                    app:boxBackgroundColor="@color/kahrakib_transparent"
+                    app:boxStrokeColor="@color/primaryColor"
+                    app:endIconMode="clear_text"
+                    app:helperText="@string/fragment_ajouter_user_obligatoire"
+                    app:helperTextTextColor="@color/kahrakib_red">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- user email end  -->
+
+                <!-- user mot de passe start  -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fragment_ajouter_user_mot_de_passe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/fragment_ajouter_user_mot_de_passe"
+                    app:boxBackgroundColor="@color/kahrakib_transparent"
+                    app:boxStrokeColor="@color/primaryColor"
+                    app:endIconMode="password_toggle"
+                    app:helperText="@string/fragment_ajouter_user_obligatoire"
+                    app:helperTextTextColor="@color/kahrakib_red">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="18sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- user mot de passe end  -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbtn_fragment_ajouter_user_ajouter"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginVertical="50dp"
+                    android:elevation="5dp"
+                    android:text="@string/fragment_ajouter_user_ajouter"
+                    android:textColor="@color/kahrakib_white"
+                    app:cornerRadius="@dimen/button_corners"
+                    app:rippleColor="@color/kahrakib_gray_light" />
+
+            </LinearLayout>
+            <!-- user information end-->
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,328 @@
+<resources>
+
+    <!-- GLOBAL -->
+    <string name="app_name">Kahrakib</string>
+
+
+    <!-- FRAGMENT WELCOME -->
+    <string name="fragment_login_titre">Système de gestion\ndes caisses</string>
+    <string name="fragment_login_desc">se connecter</string>
+    <string name="fragment_login_connecter">connecter</string>
+    <string name="fragment_login_email">Email</string>
+    <string name="fragment_login_mot_de_passe">Mot de passe</string>
+    <string name="fragment_login_oublier_mot_de_passe">Mot de passe oublié?</string>
+
+    <!-- FRAGMENT ADMIN -->
+
+    <!-- FRAGMENT CLIENT -->
+
+
+    <!-- FRAGMENT PROFILE -->
+    <string name="fragment_profile_nom_complete"></string>
+    <string name="fragment_profile_email">example@gmail.com</string>
+    <string name="fragment_profile_parametre">Paramètres</string>
+    <string name="fragment_profile_personal_information">Informations personnelles</string>
+    <string name="fragment_profile_change_mot_de_passe">Changer le mot de passe</string>
+    <string name="fragment_profile_contact">Contactez nous</string>
+    <string name="fragment_profile_condition_de_utilisation">Conditions de l\'utilisation</string>
+    <string name="fragment_profile_deconnecter">Se déconnecter</string>
+
+    <!-- FRAGMENT INFORMATION -->
+    <string name="fragment_information_titre">Information Personnel</string>
+    <string name="fragment_information_prenom">Prénom</string>
+    <string name="fragment_information_nom">Nom</string>
+    <string name="fragment_information_email">Email</string>
+    <string name="fragment_information_naissance">Date de naissance</string>
+    <string name="fragment_information_telephone">Numéro de téléphone</string>
+    <string name="fragment_information_maj">mettre à jour</string>
+
+    <!-- FRAGMENT CONDITION -->
+    <string name="fragment_condition_titre">Conditions D\'utilisation</string>
+    <string name="fragment_condition_article_one">ARTICLE 1 : Objet</string>
+    <string name="fragment_condition_article_two">ARTICLE 2 : Mentions légales</string>
+    <string name="fragment_condition_article_three">ARTICLE 3 : accès aux services</string>
+    <string name="fragment_condition_article_four">ARTICLE 4 : Responsabilité de l’Utilisateur</string>
+    <string name="fragment_condition_article_five">ARTICLE 5 : Responsabilité de l’Éditeur</string>
+    <string name="fragment_condition_article_six">ARTICLE 6 : Propriété intellectuelle</string>
+    <string name="fragment_condition_article_seven">ARTICLE 7 : Données personnelles</string>
+    <string name="fragment_condition_article_eight">ARTICLE 8 : Liens hypertextes</string>
+    <string name="fragment_condition_article_nine">ARTICLE 9 : Évolution des conditions générales d’utilisation</string>
+    <string name="fragment_condition_article_ten">ARTICLE 10 : Durée du contrat</string>
+
+
+    <string name="fragment_condition_article_contenu">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+
+
+    <!-- FRAGMENT MOT DE PASSE -->
+    <string name="fragment_pass_titre">Changment du mot de passe</string>
+    <string name="fragment_pass_actuel_mot_de_passe">Mot de passe actuel</string>
+    <string name="fragment_pass_nouveau_mot_de_passe">Nouveau mot de passe</string>
+    <string name="fragment_pass_confirmez_nouveau_mot_de_passe">Confirmez le mot de passe</string>
+    <string name="fragment_pass_enregistrer">Enregistrer</string>
+
+    <!-- FRAGMENT CONTACT -->
+    <string name="fragment_contact_titre">Contact</string>
+    <string name="fragment_contact_email">contact-kahrakib@kahrakib.dz</string>
+    <string name="fragment_contact_adresse">127, boulvard colonel Krim Belkacem - Alger</string>
+    <string name="fragment_contact_telephone">021741835</string>
+    <string name="fragment_contact_requete">Faire une requête</string>
+
+
+    <!-- FRAGMENT PARAMETRE -->
+    <string name="fragment_parametre_titre">Paramètres</string>
+    <string name="fragment_parametre_Langue">Langage de l\'app</string>
+    <string name="fragment_parametre_session">Enregistrer la session</string>
+
+
+    <!-- FRAGMENT USERS -->
+    <string name="fragment_users_titre">Utilisateurs</string>
+
+    <!-- FRAGMENT CHANTIER -->
+    <string name="fragment_chantier_titre">Chantiers</string>
+
+    <!-- FRAGMENT ELEMENT -->
+    <string name="fragment_element_titre">Elements</string>
+
+    <!-- FRAGMENT AJOUTER USER -->
+    <string name="fragment_ajouter_user_titre">Ajouter Un Utilisateur</string>
+    <string name="fragment_ajouter_user_ajouter">Ajouter</string>
+    <string name="fragment_ajouter_user_prenom">Prénom</string>
+    <string name="fragment_ajouter_user_nom">Nom</string>
+    <string name="fragment_ajouter_user_email">Email</string>
+    <string name="fragment_ajouter_user_naissance">Date de naissance</string>
+    <string name="fragment_ajouter_user_naissance_jour">Jour</string>
+    <string name="fragment_ajouter_user_naissance_mois">Mois</string>
+    <string name="fragment_ajouter_user_naissance_annee">Annee</string>
+    <string name="fragment_ajouter_user_telephone">Numéro de téléphone</string>
+    <string name="fragment_ajouter_user_chantier">Chantier</string>
+    <string name="fragment_ajouter_user_direction">Direction</string>
+    <string name="fragment_ajouter_user_profil">Profil</string>
+    <string name="fragment_ajouter_user_mot_de_passe">Mot de passe</string>
+    <string name="fragment_ajouter_user_obligatoire">*Obligatoire</string>
+    <string name="fragment_ajouter_user_maj_titre">Modifier l\'utilisateur</string>
+    <string name="fragment_ajouter_user_maj">Mettre à jour</string>
+
+    <!-- FRAGMENT AJOUTER CHANTIER -->
+    <string name="fragment_ajouter_chantier_titre">Ajouter Un Chantier</string>
+    <string name="fragment_ajouter_chantier_ajouter">Ajouter</string>
+    <string name="fragment_ajouter_chantier_nom">Nom</string>
+    <string name="fragment_ajouter_chantier_telephone">Numéro de téléphone</string>
+    <string name="fragment_ajouter_chantier_direction">Direction</string>
+    <string name="fragment_ajouter_chantier_adresse">Adresse</string>
+    <string name="fragment_ajouter_chantier_obligatoire">*Obligatoire</string>
+    <string name="fragment_ajouter_chantier_maj_titre">Modifier le chantier</string>
+    <string name="fragment_ajouter_chantier_maj">Mettre à jour</string>
+
+    <!-- FRAGMENT AJOUTER ELEMENT -->
+    <string name="fragment_ajouter_element_titre">Ajouter Un Element</string>
+    <string name="fragment_ajouter_element_nom">Nom de l\'element</string>
+    <string name="fragment_ajouter_element_ajouter">Ajouter</string>
+    <string name="fragment_ajouter_element_maj_titre">Modifier l\'element</string>
+    <string name="fragment_ajouter_element_maj">Mettre à jour</string>
+
+    <!-- FRAGMENT RECHERCHE -->
+    <string name="fragment_recherche_titre">Recherche...</string>
+    <string name="fragment_recherche_pas_de_resultat">Aucun resultat</string>
+
+
+    <!-- FRAGMENT REQUETE -->
+    <string name="fragment_requete_titre">Faire une requete</string>
+    <string name="fragment_requete_envoyer">Envoyer</string>
+    <string name="fragment_requete_type">Type</string>
+    <string name="fragment_requete_message">Message</string>
+    <string name="fragment_requete_obligatoire">*Obligatoire</string>
+
+
+    <!-- FRAGMENT DPS -->
+    <string name="fragment_dps_titre">Demandes de prestation de service</string>
+    <string name="fragment_dps_titre_valide">Demandes de prestation de service validées</string>
+    <string name="fragment_dps_vide">La liste est vide !</string>
+
+    <!-- FRAGMENT EDC -->
+    <string name="fragment_edc_titre">Etats de caisse</string>
+    <string name="fragment_edc_titre_valide">Etats de caisse validée</string>
+    <string name="fragment_edc_titre_en_attente">Etats de caisse en Attente</string>
+
+    <!-- FRAGMENT DPS RECU -->
+    <string name="fragment_dps_recu_titre">Demandes de prestation de service</string>
+    <string name="fragment_dps_recu_budget">Budget</string>
+
+    <!-- FRAGMENT DPS ENVOYER -->
+    <string name="fragment_dps_envoyer_titre">Demandes de prestation de service Envoyer</string>
+
+
+    <!-- FRAGMENT AJOUTER DPS -->
+    <string name="fragment_ajouter_dps_titre">Ajouter une DPS</string>
+    <string name="fragment_ajouter_dps_suivant">Suivant</string>
+    <string name="fragment_ajouter_dps_nom_prestataire">Nom du prestataire</string>
+    <string name="fragment_ajouter_dps_adresse_prestataire">Adresse du prestataire</string>
+    <string name="fragment_ajouter_dps_date_achat">Date d\'achat</string>
+    <string name="fragment_ajouter_dps_obligatoire">*Obligatoire</string>
+
+    <!-- FRAGMENT DPS DETAILS -->
+    <string name="fragment_dps_details_titre">Demande de prestation \nde service</string>
+    <string name="fragment_dps_details_client">Client : </string>
+    <string name="fragment_dps_details_etat_client">Client Etat : </string>
+    <string name="fragment_dps_details_etat_cassier">Caissier Etat : </string>
+    <string name="fragment_dps_details_nom_prestataire">Prestataire : </string>
+    <string name="fragment_dps_details_achats">Achats : </string>
+    <string name="fragment_dps_details_adresse_prestataire">Adresse du prestataire : </string>
+    <string name="fragment_dps_details_date_achat">Date d\'achat : </string>
+    <string name="fragment_dps_details_date_total_achat">Montant d\'achats : </string>
+    <string name="fragment_dps_details_rejete">Rejeter</string>
+    <string name="fragment_dps_details_valide">Valider</string>
+    <string name="fragment_dps_details_supprimer">Supprimer</string>
+
+    <!-- FRAGMENT EDC DETAILS -->
+    <string name="fragment_edc_details_titre">Etat de caisse</string>
+    <string name="fragment_edc_details_etat">Etat : </string>
+    <string name="fragment_edc_details_imputation">Imputation : </string>
+    <string name="fragment_edc_details_numero_etat">Numero d\'etat : </string>
+    <string name="fragment_edc_details_article">Articles : </string>
+    <string name="fragment_edc_details_montent_global">Montant global : </string>
+    <string name="fragment_edc_details_supprimer">Supprimer</string>
+    <string name="fragment_edc_details_rejeter">Rejeter</string>
+    <string name="fragment_edc_details_valide">Valider</string>
+    <string name="fragment_edc_details_en_attente">En attente</string>
+
+
+    <!-- FRAGMENT AJOUTER ACHATS -->
+    <string name="fragment_ajouter_achats_titre">Achats</string>
+    <string name="fragment_ajouter_achats_titre_liste">Liste D\'achats</string>
+    <string name="fragment_ajouter_achats_ajouter">Ajouter</string>
+    <string name="fragment_ajouter_achats_designation">Designation</string>
+    <string name="fragment_ajouter_achats_quantite">Quantité</string>
+    <string name="fragment_ajouter_achats_prix_unitaire">Prix unitaire</string>
+    <string name="fragment_ajouter_achats_prix_total">Prix total :</string>
+    <string name="fragment_ajouter_achats_liste_vide">Liste vide!</string>
+
+
+    <!-- MENU AB-->
+    <string name="menu_ab_ajouter">Ajouter</string>
+    <string name="menu_ab_profile">Profil</string>
+
+    <!-- MENU BNV ADMIN-->
+    <string name="menu_bnv_admin_utilisateur">Utilisateurs</string>
+    <string name="menu_bnv_admin_elements">Elements</string>
+    <string name="menu_bnv_admin_chantier">Chantiers</string>
+    <string name="menu_bnv_admin_search">Recherche</string>
+
+    <!-- MENU BNV CLIENT-->
+    <string name="menu_bnv_client_dps">Dps</string>
+    <string name="menu_bnv_client_dps_valide">Validée</string>
+
+    <!-- MENU BNV CLIENT-->
+    <string name="menu_bnv_cassier_dps">Dps</string>
+    <string name="menu_bnv_cassier_edc">Edc</string>
+
+    <!-- MENU BNV CLIENT-->
+    <string name="menu_bnv_cassier_respo_edc">Edc</string>
+    <string name="menu_bnv_cassier_respo_en_attente">En attente</string>
+    <string name="menu_bnv_cassier_respo_valide">Validée</string>
+
+    <!-- MENU BNV CLIENT-->
+    <string name="menu_bnv_comptable_edc">Edc</string>
+    <string name="menu_bnv_comptable_en_attente">En attente</string>
+    <string name="menu_bnv_comptable_valide">Validée</string>
+
+    <!-- MENU USER FILTER-->
+    <string name="menu_user_filter_administratuer">Administrateur</string>
+    <string name="menu_user_filter_cassier">Caissier</string>
+    <string name="menu_user_filter_cassier_respo">Caissier Responsable</string>
+    <string name="menu_user_filter_comptable">Comptable</string>
+    <string name="menu_user_filter_client">Client</string>
+    <string name="menu_user_filter_tout">Tout</string>
+
+    <!-- MENU CHANTIER FILTER-->
+    <string name="menu_chantier_filter_dtlc">Dtlc</string>
+    <string name="menu_chantier_filter_dtpi">Dtpi</string>
+    <string name="menu_chantier_filter_tout">Tout</string>
+
+    <!-- MENU USER ITEM-->
+    <string name="menu_item_user_modifier">Modifier</string>
+    <string name="menu_item_user_supprimer">Supprimer</string>
+
+    <!-- MENU USER ITEM-->
+    <string name="menu_item_element_modifier">Modifier</string>
+    <string name="menu_item_element_supprimer">Supprimer</string>
+
+    <!-- MENU ACHAT ITEM-->
+    <string name="menu_item_achat_modifier">Modifier</string>
+    <string name="menu_item_achat_supprimer">Supprimer</string>
+
+
+    <!--Component Error-->
+    <string name="component_error_ressayer">Réessayer</string>
+    <string name="component_error_aller_accueill">Aller à la page d\'accueill</string>
+    <string name="component_error_aller_titre">oooops</string>
+    <string name="component_error_aller_message">Une erreur s\'est produite. Veuillez réessayer</string>
+
+    <!--Component Success-->
+    <string name="component_success_continue">Continuer</string>
+    <string name="component_success_titre">Succès</string>
+    <string name="component_success_message">Utilisateur ajouté avec succès</string>
+
+
+    <!--ITEM CHANTIER-->
+    <string name="item_chantier_imputation">Imputation</string>
+    <string name="item_chantier_adresse">Adresse</string>
+    <string name="item_chantier_telephone">Telephone</string>
+
+    <!--ITEM DPS DETAILS-->
+    <string name="item_dps_details_quantite">Quantité :</string>
+    <string name="item_dps_details_prix">Prix :</string>
+
+
+    <!-- DIALOG ERROR -->
+    <string name="dialog_error_message">Oups, quelque chose s\'est mal passé</string>
+    <string name="dialog_error_reessayer">réessayer</string>
+
+    <!-- DIALOG ADD USER -->
+    <string name="dialog_add_user_titre">ajouter un utilisateur</string>
+    <string name="dialog_add_user_email">Email</string>
+    <string name="dialog_add_user_password">Mot de passe</string>
+    <string name="dialog_add_user_conferm_password">confermier le Mot de passe</string>
+    <string name="dialog_add_user_role">Rôle</string>
+    <string name="dialog_add_user_add">Ajouter</string>
+
+    <!-- DIALOG CONFERME SUPPRISSION -->
+    <string name="dialog_conferme_supprission_message">êtes-vous sûr de vouloir supprimer définitivement cet élément </string>
+    <string name="dialog_conferme_supprission_conferme">Confirmer</string>
+    <string name="dialog_conferme_supprission_annuler">Annuler</string>
+
+
+    <!-- DIALOG CONFERME ENVOI -->
+    <string name="dialog_conferme_envoi_message">êtes-vous sûr de vouloir valider et envoyer cette DPS</string>
+    <string name="dialog_conferme_envoi_sub_message">*cette action est permanente et ne peut pas être modifiée</string>
+    <string name="dialog_conferme_envoi_envoyer">Envoyer</string>
+    <string name="dialog_conferme_envoi_annuler">Annuler</string>
+
+    <!-- DIALOG CONFERME REJETER -->
+    <string name="dialog_conferme_rejeter_message">êtes-vous sûr de vouloir rejeter cet EDC</string>
+    <string name="dialog_conferme_rejeter_sub_message">*cette action est permanente et ne peut pas être modifiée</string>
+    <string name="dialog_conferme_rejeter_rejeter">Rejeter</string>
+    <string name="dialog_conferme_rejeter_annuler">Annuler</string>
+
+    <!-- DIALOG CONFERME EN ATTENTE -->
+    <string name="dialog_conferme_en_attente_message">êtes-vous sûr de vouloir mettre cet EDC en attente</string>
+    <string name="dialog_conferme_en_attente_confirmer">Confirmer</string>
+    <string name="dialog_conferme_en_attente_annuler">Annuler</string>
+
+    <!-- MESSAGES -->
+    <string name="message_obligatoire_non_vide">Ce champ ne peut pas etre vide</string>
+    <string name="message_mot_de_passe_correspondance">le nouveau mot de passe ne correspond pas au mot de passe confirmé</string>
+    <string name="message_mot_de_passe_incorrecte">le mot de passe est incorrecte</string>
+    <string name="message_entre_email_valide">Veuillez entrer un email valide</string>
+    <string name="message_entre_jour_valide">Veuillez entrer un jour correct</string>
+    <string name="message_entre_mois_valide">Veuillez entrer un mois correct</string>
+    <string name="message_entre_annee_valide">Veuillez entrer un annee correct</string>
+    <string name="message_obligatoire_qty_non_zero">selectionne la quantite</string>
+
+
+    <!-- DPS ETAT -->
+    <string name="message_dps_etat_client_non_valide">Non valide</string>
+    <string name="message_dps_etat_client_valide">Valid</string>
+    <string name="message_dps_etat_cassier_non_valide">Non valide</string>
+    <string name="message_dps_etat_cassier_valide">Valid</string>
+
+</resources>

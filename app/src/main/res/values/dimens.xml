@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GLOBAL -->
+    <dimen name="padding_global">16dp</dimen>
+    <dimen name="margin_global">16dp</dimen>
+    <dimen name="edit_text_corners">10dp</dimen>
+    <dimen name="button_corners">10dp</dimen>
+    <dimen name="layout_corners">20dp</dimen>
+
+</resources>
